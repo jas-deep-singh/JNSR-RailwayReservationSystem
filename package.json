@@ -1,0 +1,26 @@
+{
+  "name": "jnsr-railwayreservationsystem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "railway reservation system",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:api": "npm run dev --workspace=apps/api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jas-deep-singh/JNSR-RailwayReservationSystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jas-deep-singh/JNSR-RailwayReservationSystem/issues"
+  },
+  "homepage": "https://github.com/jas-deep-singh/JNSR-RailwayReservationSystem#readme"
+}
