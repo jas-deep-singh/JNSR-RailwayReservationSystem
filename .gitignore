@@ -27,3 +27,15 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+
+# Prisma generated client
+apps/api/src/generated/prisma/
+
+# Local AI/development tooling
+.agents/
+.claude/
+.windsurf/
+
+# Tool-generated files
+skills-lock.json
+apps/api/skills-lock.json
