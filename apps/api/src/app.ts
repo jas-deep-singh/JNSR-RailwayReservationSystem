@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
 import stationRoutes from "./routes/station.routes";
+import trainRoutes from "./routes/train.routes";
+import seatLockRoutes from "./routes/seat-lock.routes";
 
 const app = express();
 
@@ -15,5 +17,7 @@ app.get("/health", (req, res) => {
 });
 
 app.use("/api/v1/stations", stationRoutes);
+app.use("/api/v1/trains", trainRoutes);
+app.use("/api/v1/seat-locks", seatLockRoutes);
 
 export default app;
