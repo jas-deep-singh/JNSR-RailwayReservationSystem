@@ -3,6 +3,7 @@ import cors from "cors";
 import stationRoutes from "./routes/station.routes";
 import trainRoutes from "./routes/train.routes";
 import seatLockRoutes from "./routes/seat-lock.routes";
+import bookingRoutes from "./routes/booking.routes";
 
 const app = express();
 
@@ -19,5 +20,6 @@ app.get("/health", (req, res) => {
 app.use("/api/v1/stations", stationRoutes);
 app.use("/api/v1/trains", trainRoutes);
 app.use("/api/v1/seat-locks", seatLockRoutes);
+app.use("/api/v1/bookings", bookingRoutes);
 
 export default app;
